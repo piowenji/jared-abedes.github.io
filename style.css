@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+.banner
+{
+    width: 100%;
+    padding-top: 10rem;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(IMG_20220722_000432.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.banner .content
+{
+    text-align: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner .content p
+{
+    color: #fff;
+    font-size: 47px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.banner .content .malaki{
+    font-size: 85px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+.banner .content a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner .content .details{
+    color: white;
+    padding-top: 1.5rem;
+    width: 60%;
+    font-size: 17px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 1.5rem;
+}
+
+.content .button
+{
+    background: #83046840;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-decoration: none;
+
+    font-weight: 500;
+}
+.content .button:hover
+{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+
+}
+section{
+    padding: 100px;
+}
+
+header
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 30px 90px;
+    width: 100%;
+    z-index: 9000;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    transition: 0.5s;
+}
+header.sticky
+{
+    padding: 10px 90px;
+    background: #fff;
+    box-shadow: 0 4px 19px rgba(0,0,0,0.04);
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+
+header .nav
+{
+    display: flex;
+    position: relative;
+}
+header .nav li
+{
+    margin-left: 30px;
+    list-style: none;
+    font-weight: 400;
+}
+header .nav li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+header.sticky .nav li a
+{
+    color: #111;
+    font-weight: 400;
+}
+header .nav li a:hover
+{
+    color: orange;
+    transition: 0.25s;
+}
+
+section .about{
+    max-width: 1200px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row
+{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.row .co150
+{
+    width: 48%;
+    position: relative;
+    align-items: center;
+}
+.titleText
+{
+    font-weight: 800;
+    font-size: 55px;
+    color: #111;
+    text-transform: uppercase;
+}
+.titleText span
+{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: orange;
+}
+.row .co150 .imgBx
+{
+    /*min-height: 300px;*/
+    height: 400px;
+    width: 620px;
+    position: relative;
+}
+.row .co150 .imgBx img
+{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.title
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.hobbies .content
+{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.hobbies .content .box
+{
+    margin: 20px;
+    width: 350px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.07);
+}
+
+.contact
+{
+    background-image: url(IMG_20220629_185037.jpg);
+    background-size: contain;
+}
+.contactform
+{
+    padding: 70px 50px;
+    max-width: 450px;
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.contactform h3
+{
+    margin: 15px;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #111;
+}
+.contactform .inputBox
+{
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+    font-weight: 400;
+    font-size: 15px;
+    outline: none;
+    color: #111;
+    padding: 10px;
+    border: 1px solid #555;
+    width: 100%;
+}
+.contactform .inputBox input[type="submit"]
+{
+    color: #fff;
+    font-size: 0.9em;
+    background: orange;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+.contactform .inputBox input[type="submit"]:hover
+{
+    letter-spacing: 4px;
+}
+.follow a{
+    font-weight: 600;
+}
+.copyrightText
+{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 8px 30px;
+}
+.copyrightText p
+{
+    color: #333;
+}
+.copyrightText a
+{
+    color: orange;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact p {
+    color:white;
+}
+.btnstl{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+.btnstl:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

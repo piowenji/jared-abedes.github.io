@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" data-aos="fade-down" data-aos-offset="200" data-aos-duration="300">Portfolio</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav" data-aos="fade-down" data-aos-offset="300" data-aos-duration="400">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#personal info" onclick="toggleMenu();">About</a></li>
+            <li><a href="#educational background" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#Skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="600">Hi,
+            </p>
+            <p class="malaki" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="600"
+                data-aos-duration="700">Im <a href="#personal info"><span id="dev">Jared Cire</span></a></p>
+            <div class="details" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                data-aos-duration="600">BSIT Student from University of Abra Main Campus</div>
+            <a href="#personal info" class="button" style="transition: 0.5s ease-in-out;" data-aos="zoom-in"
+                data-aos-delay="500" data-aos-duration="700">Explore</a>
+        </div>
+    </section>
+
+    <section class="about" id="personal info">
+        <div class="row">
+            <div class="co150">
+                <div class="imgBx" data-aos="fade-up" data-aos-offset="500" data-aos-duration="600">
+                    <img src="IMG20220605063303.jpg" >
+                </div>
+            </div>
+            <div class="co150">
+                <h2 class="titleText" id="box" data-aos="fade-down" data-aos-offset="500" data-aos-duration="600"
+                    onclick="nagan()" ondblclick="normal()">
+                    Hello!</h2>
+                <p data-aos="fade-right" data-aos-offset="500" data-aos-duration="600">Hi, Welcome To My Personal
+                    Website! I am
+                    Jared Cire Venus Abedes, 20 years of age, raised and born at Bucay, Abra,
+                    Philippines. I am currently enrolled at Abra State Institute of Sciences and
+                    Technology, Main Campus with the course Bachelor of Science in Information Technology. I am
+                    currently living at Calao, Bucay, Abra. I am the oldest among us siblings.
+                    Looking back to my school life, I started my journey at Holy Cross School. Being a kid, I did a lot
+                    of bad things
+                    but without those experiences I would not be my current self. eventhough I was not the brightest, I
+                    did
+                    my best to persevere and succeed. It all paid off when I got my diploma in 2014<br><br>Moving
+                    forward at the 6th
+                    month of the year 2014, my journey in high school started in the same school it was tough, it
+                    doesn't go as planned,
+                    but all the hardwork and obstacles I overcame paid off as I completed the 6 years of struggle as a
+                    high school student.
+                    <br><br>Back then, I thought that college life is much more easier but It was much more worse than I
+                    thought.
+                    Especially we had to experience lockdown which made us study online, acquiring knowledge is much
+                    harder. But I was determined to continue
+                    <br><br>All these experiences I had made me realize that you cannot gain something easily but
+                    through hardwork.
+                    <br><br>I love doing sports, especially basketball as it was my game growing up. I also love playing online
+                    games, and one of my
+                    most used game application is Mobile Legends:Bang Bang. I've spend a lot of time playing ML as it is my
+                    stress reliever. Below you can find my account. Follow and we'll play together. I also love streaming Movies
+                    especially Anime. Actually, I plan to start livestreaming soon, so if I
+                    ever start my journey,
+                    you can follow me and help me to grow my streaming channel.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="educational background" id="educational background">
+        <div class="title">
+            <h2 class="titleText"><span>M</span>y <span>A</span>ctivities <span></h2>
+            <center><button class="btnstl">Onclick</button>
+            <button class="btnstl">Javascript Output</button>
+            <button class="btnstl">Html Events</button>
+            <button class="btnstl">Login</button><br><br>
+            <button class="btnstl">Calculator</button>
+            <button class="btnstl">Css Tutorial Book</button>
+            <button class="btnstl">Box Model</button>
+            <button class="btnstl">Web Typography</button></center>
+
+        </div>
+    </section>
+
+    <section class="hobbies" id="Skills">
+        <div class="title">
+            <h2 class="titleText"><span>S</span>kills</h2>
+            <p></p>
+        </div>
+
+        <div class="title">
+            <a href="#" class="button">Scroll Up</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Kindly fill up the form to send your queries. Thank You!</p>
+        </div>
+        <div class="contactform">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+    <section class="follow" id="follow">
+        <div class="title">
+            <h2 class="titleText"><span>F</span>ollow <span>M</span>e</h2>
+            <p>You can follow me on Instagram, Facebook, or YouTube to be updated to my new uploads.<br>Instagram: <a
+                    href="#"> piowenji</a> Facebook: <a href="#">Jared Cire Venus Abedes</a></p>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright @2023 <a href="#banner">Jared Cire Abedes</a>. All Right Reserved</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const nav = document.querySelector('.nav');
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        const dev = document.getElementById('dev');
+
+        dev.addEventListener('mouseover', function point() {
+            dev.style.color = 'yellowgreen';
+        });
+
+        dev.addEventListener('mouseout', function pointout() {
+            dev.style.color = 'white';
+        });
+    </script>
+</body>
+
+</html>
