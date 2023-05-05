@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .btnStyle:hover{
+                background-color:brown;
+            }
+            .btnStyle:active{
+                background-color:#00FF00; 
+            }
+            .h1Style{
+                font-style: italic;
+                font-family: cursive;
+            }
+            .fnameStyle{
+                font-family: cursive;
+            }
+            .fnameStyle:hover{
+                background-color: brown;
+            }
+            .lnameStyle{
+                font-family: cursive;
+            }
+            .lnameStyle:hover{
+                background-color: brown;
+            }
+            .byearStyle{
+                font-family: cursive;
+            }
+            .byearStyle:hover{
+                background-color: brown;
+            }
+            input{
+                background-color: white;
+                border: 3px solid goldenrod;
+                width: 200px;
+                padding: 10px 40px;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            button{
+                background-color: goldenrod;
+                color: black;
+                width: 200px;
+                border-radius: 50px;
+                padding: 10px 0;
+                cursor: pointer;
+            }
+            .border{
+                border: 5px solid goldenrod;
+                background-color: rgb(214, 170, 112);
+                padding: 10px;
+                width: 300px;
+                border-radius: 50px;
+            }
+        </style>
+    </head>
+
+<body style="background-color: burlywood">
+    <center>
+        <div class="border">
+        <h1 class="h1Style">Personal Info.</h1>
+        <table>
+            <input class="fnameStyle" placeholder="First Name" onkeydown="count()" id="count"><br><br>
+            <input class="lnameStyle" placeholder="Last Name" onkeydown="count()" id="count"><br><br>
+            <input class="byearStyle" placeholder="Birth Year" id="byear"><br><br>
+
+            <button class="btnStyle" onclick="sub()">SUBMIT</button>
+            <br><br>
+            Name is pressed <span id="countNum">0</span> Times <br>
+            Your age is <span id="byear1">0</span>
+        </table>
+        </div>
+    </center>
+    <script>
+        function count() {
+            var countNum = document.getElementById("countNum").innerHTML;
+
+            document.getElementById("countNum").innerHTML = Number(countNum) + 1;
+        }
+        function sub() {
+            alert("Your Information is Saved")
+        }
+        var byear = document.getElementById("byear");
+        var byear1 = document.getElementById("byear1");
+        var y = 2023
+
+        byear.addEventListener("keyup", function () {
+            var val = byear.value;
+            byear1.innerText = (y - val);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .border {
+            border: 5px solid goldenrod;
+            background-color: rgb(214, 170, 112);
+            padding: 50px;
+            border-radius: 50px;
+        }
+
+        .btnstyle:hover {
+            background-color: burlywood;
+        }
+
+        .btnstyle:active {
+            background-color: khaki;
+        }
+
+        .ttlstyle {
+            font-style: bold;
+            font-family: "times new roman";
+            font-size: 25px;
+        }
+
+        .Ustyle {
+            font-family: "times new roman";
+        }
+
+        .Pstyle {
+            font-family: "times new roman";
+        }
+         
+        input {
+            background-color: white;
+            border: 3px solid goldenrod;
+            width: 200px;
+            padding: 10px 40px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        button {
+            color: black;
+            width: 200px;
+            border-radius: 50px;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+    <title>Login</title>
+</head>
+
+<body>
+    <center>
+        <div class="border">
+            <p class="ttlstyle">Login</p>
+            <p class="Ustyle">Username:</p><input type="text" id="Uname">
+            <p class="Pstyle">Password:</p><input type="password" id="pword">
+            <br><br>
+            <button class="btnstyle" onclick="check()">Login</button>
+        </div>
+    </center>
+     <script>
+         function check() {
+             var Username = document.getElementById("Uname").value;
+             var Password = document.getElementById("pword").value;
+             var Uname = 'insist03';
+             var pword = 'jaredcire';
+
+             if ((Username == "") && (Password == "")){
+                 alert("All textboxes are empty");
+             }
+             else if ((Username == "") && (Password == Password)){
+                 alert("Username is empty");
+             }
+             else if ((Username == Username) && (Password == "")){
+                 alert("Password is empty");
+             }
+             else if((Username == Uname)&&(Password == pword)) {
+                 alert("Logged in successfully");
+             }
+             else if((Username == Uname)&&(Password != pword)) {
+                 alert("Incorrect password");
+             }
+             else if((Username != Uname)&&(Password == pword)) {
+                 alert("Incorrect username");
+             }
+             else{
+                 alert("Incorrect Username and Password")
+             }
+         }
+     </script>
+
+</body>
+
+</html>
